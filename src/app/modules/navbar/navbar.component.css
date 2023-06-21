@@ -1,0 +1,24 @@
+.nav-item {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.divider-row {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5px 0;
+}

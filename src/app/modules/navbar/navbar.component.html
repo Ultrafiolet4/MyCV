@@ -1,0 +1,23 @@
+<div class="container" style="height: 20vh;">
+  <mat-toolbar color="primary" class="navbar">
+    <mat-toolbar-row>
+      <div class="container" fxLayout="row" fxFlexFill>
+        <div fxLayoutAlign="start center">
+          <span class="logo">My CV</span>
+        </div>
+        <div fxFlex="1 1 auto"></div>
+        <div class="nav-items" fxLayoutAlign="end center">
+          <span class="nav-item" routerLink="/">Home</span>
+          <span class="nav-item" routerLink="/mycv">My CV</span>
+          <span class="nav-item" routerLink="/aboutme">About</span>
+        </div>
+      </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="divider-row"></mat-toolbar-row>
+    <mat-toolbar-row>
+      <span>Hello, {{ name$ | async }}</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+
+
