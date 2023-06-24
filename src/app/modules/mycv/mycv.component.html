@@ -1,1 +1,25 @@
-<p>mycv works!</p>
+<div fxLayout="column" fxLayoutAlign="center" class="container">
+  <h2 fxLayoutAlign="center">My CV</h2>
+  <div class="container" fxLayoutAlign="center">
+    <div fxFlex="20" fxHide.md></div>
+    <mat-card class="card" fxFlex.md="100%" fxFlex="60">
+      <mat-card-content fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+        <div fxFlex="30">
+          <img src="assets/profile-picture.png" alt="Profile Picture" class="profile-picture">
+        </div>
+        <div fxFlex="20" fxHide.gt-md></div>
+        <div fxFlex="70" fxFlex.lt-md="50">
+          <h3>Personal Information</h3>
+          <ul>
+            <li><strong>Name:</strong> John Doe</li>
+            <li><strong>Date of Birth:</strong> January 1, 1990</li>
+            <li><strong>Email:</strong> john.doe@example.com</li>
+            <li><strong>Phone:</strong> +1234567890</li>
+            <li><strong>Address:</strong> 123 Street, City, Country</li>
+          </ul>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <div fxFlex="20" fxHide.md></div>
+  </div>
+</div>

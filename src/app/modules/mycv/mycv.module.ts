@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import {MyCVComponent} from './mycv.component';
+import {MatCardModule} from "@angular/material/card";
+import {FlexLayoutModule, FlexModule} from "@angular/flex-layout";
 
 
 const routes: Routes = [
@@ -14,7 +16,10 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatCardModule,
+    FlexModule,
+    FlexLayoutModule
   ]
 })
 export class MyCVModule { }
